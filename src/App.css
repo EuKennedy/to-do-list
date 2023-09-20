@@ -10,20 +10,26 @@
 body {
   font-family: 'Quicksand', sans-serif;
   background-image: url(./img/bg.jpg);
-  background-color: #f4f4f4;
-  padding: 30px;
+  background-color: #0e1357;
+  padding: 2vh;
   color: #333;
- 
+
 }
 
 .app{
  max-width: 600px;
  margin: 0 auto 300px;
- background-color: #efefef;
+ background-color: #3d2464;
  padding: 20px 30px;
  border-radius: 10px;
  margin-bottom: 10px;
  line-height: 40px;
+ color: white;
+}
+
+.app h1{
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 input{
@@ -39,18 +45,41 @@ button {
   cursor: pointer;
   opacity: .8;
   transition: .3s;
+  margin-right: 10px;
 }
 
 button:hover{
   opacity: 1;
 }
 
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  border-bottom: 1px solid #fff;
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-weight: 550;
+  
+}
+
 .complete{
-  background-color: #5cb85c;
+  background-color: #00ff00;
+  font-weight: bold;
 }
 
 .remove {
-  background-color: #d9534f;
+  background-color: #ca201a;
 }
 
 .todo-form {
@@ -63,4 +92,36 @@ input, select {
   border: 1px solid #ddd;
   border-radius: 3px;
   width: 100%;
+}
+
+.search{
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+}
+
+.Asc, .Desc {
+  background-color: #00ff00;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.create {
+  background-color: #00ff00;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  opacity: 1;
 }
